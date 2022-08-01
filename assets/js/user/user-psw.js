@@ -10,12 +10,12 @@
         ],
         //新旧密码不能一致
         samePsw: function (value) {
-            if (value === $('[name=oldPsw]').val()) {
+            if (value === $('[name=oldPwd]').val()) {
                 return '新密码不能与原密码相同'
             }
         },
         rePsw: function (value) {
-            if (value !== $('[name=newPsw]').val()) {
+            if (value !== $('[name=newPwd]').val()) {
                 return '俩次密码输入不一致'
             }
         }
